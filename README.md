@@ -63,8 +63,34 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 ### Implementation
 Data Preprocessing: Balancing of the train dataset using the oversampling method.
 ![image](https://github.com/user-attachments/assets/31a9799f-7cfe-4fa5-b4a3-155f7ce32e99)
+- The total number of train images after pre-processing is 50,505.
+- The total number of test images is 7,205.
+- The architecture used for implementation is the ResNet50-based Improved Convolutional Neural Network (ImprovedCNN).
+- Our model, ImprovedCNN, utilizes a pre-trained ResNet50 for feature extraction from facial expression images. 
+  - Batch normalization enhances stability of the feature vector.
+  - A custom fully connected layer tailors the output to emotion classes.
+  - Dropout prevents overfitting by deactivating input units randomly.
+  - SoftMax produces a probability distribution for emotion classes. 
+- This architecture enables accurate emotion recognition from facial expressions.
+
+### Conclusions
+- The FER implementation using fine-tuned CNN models addresses the challenge of imbalanced class distribution in the testing dataset.
+- It employs an adapted ResNet50-based model named Improved CNN for emotion classification and utilizes a robust training and evaluation process with metrics like loss and accuracy.
+- The implementation includes an early stopping mechanism based on the test loss. If there is no improvement in the test loss for a certain number of consecutive epochs (controlled by the patience parameter), the training is stopped to prevent overfitting.
+
+### Future Scope
+- The model used for Facial Emotion Recognition FER will be further trained with different neural networks to improve the accuracy compared to the state-of-art.
+- Usage of ensemble methods can be considered by combining predictions from multiple models. This can enhance overall model robustness and accuracy.
+An interactive application or a website can be developed where users can input images, and the model predicts the corresponding emotion. This would involve deploying the trained model.
+Extension of the model can be done to handle multi-modal inputs, such as combining facial expressions with voice analysis for a more comprehensive emotion recognition system.
 
 
+
+
+# 1
+# 1
+# 1
+# 1
 
 ### Literature Survey
 1. **Benchmarking the MAX78000 AI microcontroller** for deep learning applications.
