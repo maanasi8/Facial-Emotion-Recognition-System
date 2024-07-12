@@ -22,7 +22,6 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 
 ![image](https://github.com/user-attachments/assets/f78dd619-4e62-4cef-8329-0f6edb6ccb7b)
 
-
 #### Objectives
 - Preprocess the images.
 - Construct and train a convolutional neural network(CNN) model to categorize facial emotions in humans.
