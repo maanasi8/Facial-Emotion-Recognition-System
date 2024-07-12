@@ -62,6 +62,7 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 Data Preprocessing: Balancing of the train dataset using the oversampling method.
 
 ![image](https://github.com/user-attachments/assets/31a9799f-7cfe-4fa5-b4a3-155f7ce32e99)
+
 - The total number of train images after pre-processing is 50,505.
 - The total number of test images is 7,205.
 - The architecture used for implementation is the ResNet50-based Improved Convolutional Neural Network (ImprovedCNN).
@@ -102,6 +103,7 @@ Further optimization may be explored to enhance accuracy, particularly in the di
 - **Performance in Specific Classes:** There is a tendency for the model to confuse classes such as ‘angry’, ‘fear’, and ‘neutral’, often predicting them as ‘sad’.
 
 ![image](https://github.com/user-attachments/assets/3265d525-db67-4d1f-9b50-5006941ab8cd)
+
 - **Limited Improvement for Certain Classes:** Extended training showed minimal performance improvement for classes 'angry,' 'neutral,' and 'sad.' This suggests complexity in discerning these classes, hinting at the need for diverse data or alternative approaches.
 - **Potential Learning Plateau:** Marginal overall accuracy improvement with a significant increase in epochs hints at a learning plateau. The model may be reaching its capacity for further improvement, encountering diminishing returns.
 
@@ -123,9 +125,11 @@ Test Precision: 0.6467, Test Recall: 0.6438
 
 ### Comparision
 #### Comparision of different CNN models:
+
 ![image](https://github.com/user-attachments/assets/51ee3775-9129-44f1-93f7-049ed5800da4)
 
 #### Comparision of our models to state-of-art:
+
 ![image](https://github.com/user-attachments/assets/d6ac05a2-7726-4d47-89c4-505ea1518151)
 
 ### Conclusions
@@ -139,15 +143,7 @@ Test Precision: 0.6467, Test Recall: 0.6438
 An interactive application or a website can be developed where users can input images, and the model predicts the corresponding emotion. This would involve deploying the trained model.
 Extension of the model can be done to handle multi-modal inputs, such as combining facial expressions with voice analysis for a more comprehensive emotion recognition system.
 
-
-
-
-# 1
-# 1
-# 1
-# 1
-
-## Phase 1: Model Deployment
+## Phase 2: Model Deployment
 
 ### Problem Statement and Objectives
 
@@ -160,6 +156,7 @@ Develop a deployable Facial Emotion Recognition model on an ultra-low power embe
 device.
 
 ### Approach
+
 ![image](https://github.com/user-attachments/assets/f0052841-d422-4e0d-86f9-d2d8b73be19e)
 
 1. **Model Development:** Designed with PyTorch.
@@ -169,18 +166,20 @@ device.
 
 ### Deployment Board
 **Board:** MAX78000FTHR BOARD
+
 ![image](https://github.com/user-attachments/assets/5e3a4208-d66d-42be-924e-8d2071b61764)
 
 ### Deployment Flow
+
 ![image](https://github.com/user-attachments/assets/8864f6e4-bb08-4c56-be92-1fcb23a3f2cc)
 
-
 ### Circuit Diagram
+
 ![image](https://github.com/user-attachments/assets/6726e19d-4b8b-4bc6-a702-b99569c30273)
 
 - **Inference Energy Calculation:** 
-  - \( \text{Inference Energy} = I \times V \times \text{inference time} \)
-  - Where \( I \) is the current (mA), \( V \) is the voltage (V).
+  - Inference Energy = I * V * T
+  - Where I is the current (mA), V is the voltage (V), T is inference time (in µs).
 
 ### Results and Observations
 - **Epochs:** 100
@@ -194,13 +193,18 @@ device.
   - Neutral: 47.04%
   - Sad: 44.59%
   - Fear: 39.84%
-![image](https://github.com/user-attachments/assets/cf0564b8-b6ec-420b-b19f-2abf834028a9)
-![image](https://github.com/user-attachments/assets/c7345822-34e0-41e8-a22a-4b055c44c05c)
-#### Deployment Results
-![image](https://github.com/user-attachments/assets/19a6f9d3-a090-4bba-9eee-550f2b5da5b9)
-#### Comparison of our results with the sample model
-![image](https://github.com/user-attachments/assets/598b532c-54e4-4c88-a71a-1e7aad9e42d3)
 
+![image](https://github.com/user-attachments/assets/cf0564b8-b6ec-420b-b19f-2abf834028a9)
+
+![image](https://github.com/user-attachments/assets/c7345822-34e0-41e8-a22a-4b055c44c05c)
+
+#### Deployment Results
+
+![image](https://github.com/user-attachments/assets/19a6f9d3-a090-4bba-9eee-550f2b5da5b9)
+
+#### Comparison of our results with the sample model
+
+![image](https://github.com/user-attachments/assets/598b532c-54e4-4c88-a71a-1e7aad9e42d3)
 
 ### Resource Usage
 - **Weight Memory:** 70,572 bytes out of 442,368 bytes total (16.0%)
