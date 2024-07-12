@@ -154,8 +154,6 @@ Extension of the model can be done to handle multi-modal inputs, such as combini
 #### Problem Statement
 Develop a deployable Facial Emotion Recognition model on an ultra-low power embedded system.
 
-![image](https://github.com/user-attachments/assets/f78dd619-4e62-4cef-8329-0f6edb6ccb7b)
-
 #### Objectives
 - Design a Deep Neural network-based energy-efficient Facial Emotion Recognition Model.
 - Deployment of the Facial Emotion Recognition Model on an ultra-low power embedded
@@ -171,7 +169,8 @@ device.
 
 ### Deployment Board
 **Board:** MAX78000FTHR BOARD
-  
+![image](https://github.com/user-attachments/assets/5e3a4208-d66d-42be-924e-8d2071b61764)
+
 
 ### Deployment Flow
 1. Convert the trained model to ONNX format.
