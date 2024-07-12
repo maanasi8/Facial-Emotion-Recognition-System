@@ -73,6 +73,16 @@ Data Preprocessing: Balancing of the train dataset using the oversampling method
   - SoftMax produces a probability distribution for emotion classes. 
 - This architecture enables accurate emotion recognition from facial expressions.
 
+### Comparision
+#### Comparision of different CNN models:
+![image](https://github.com/user-attachments/assets/51ee3775-9129-44f1-93f7-049ed5800da4)
+
+#### Comparision of our models to state-of-art:
+![image](https://github.com/user-attachments/assets/d6ac05a2-7726-4d47-89c4-505ea1518151)
+
+
+
+
 ### Conclusions
 - The FER implementation using fine-tuned CNN models addresses the challenge of imbalanced class distribution in the testing dataset.
 - It employs an adapted ResNet50-based model named Improved CNN for emotion classification and utilizes a robust training and evaluation process with metrics like loss and accuracy.
