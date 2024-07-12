@@ -171,13 +171,13 @@ device.
 **Board:** MAX78000FTHR BOARD
 ![image](https://github.com/user-attachments/assets/5e3a4208-d66d-42be-924e-8d2071b61764)
 
-
 ### Deployment Flow
-1. Convert the trained model to ONNX format.
-2. Use the MAX78000 Synthesizer tool to generate optimized C code.
-3. Deploy the model on the MAX78000FTHR board.
+![image](https://github.com/user-attachments/assets/8864f6e4-bb08-4c56-be92-1fcb23a3f2cc)
+
 
 ### Circuit Diagram
+![image](https://github.com/user-attachments/assets/6726e19d-4b8b-4bc6-a702-b99569c30273)
+
 - **Inference Energy Calculation:** 
   - \( \text{Inference Energy} = I \times V \times \text{inference time} \)
   - Where \( I \) is the current (mA), \( V \) is the voltage (V).
@@ -194,6 +194,13 @@ device.
   - Neutral: 47.04%
   - Sad: 44.59%
   - Fear: 39.84%
+![image](https://github.com/user-attachments/assets/cf0564b8-b6ec-420b-b19f-2abf834028a9)
+![image](https://github.com/user-attachments/assets/c7345822-34e0-41e8-a22a-4b055c44c05c)
+#### Deployment Results
+![image](https://github.com/user-attachments/assets/19a6f9d3-a090-4bba-9eee-550f2b5da5b9)
+#### Comparison of our results with the sample model
+![image](https://github.com/user-attachments/assets/598b532c-54e4-4c88-a71a-1e7aad9e42d3)
+
 
 ### Resource Usage
 - **Weight Memory:** 70,572 bytes out of 442,368 bytes total (16.0%)
