@@ -40,8 +40,8 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 - The emotion recognition system should achieve a minimum accuracy of 70% on standardized emotion recognition benchmarks.
 
 #### Use Case Diagram
-![image](https://github.com/user-attachments/assets/c3a8f9ce-cba5-4015-b90f-8acd187b190d)
 
+![image](https://github.com/user-attachments/assets/c3a8f9ce-cba5-4015-b90f-8acd187b190d)
 
 ### Dataset Description
 - **Source:** Kaggle ("Facial emotion recognition" dataset)
@@ -59,9 +59,9 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 - **Testing images** – 20.06% [7,205 images]
 - **Training images** – 79.93% [28,709 images]
 
-
 ### Implementation
 Data Preprocessing: Balancing of the train dataset using the oversampling method.
+
 ![image](https://github.com/user-attachments/assets/31a9799f-7cfe-4fa5-b4a3-155f7ce32e99)
 - The total number of train images after pre-processing is 50,505.
 - The total number of test images is 7,205.
@@ -92,13 +92,16 @@ Data Preprocessing: Balancing of the train dataset using the oversampling method
 - Angry and Suprise expressions have lower accuracy rates, with 20.7% and 23.96%, respectively.
 - Fear exhibits an accuracy of 15.95%, indicating the lowest performance.
 Further optimization may be explored to enhance accuracy, particularly in the disgust category.
+
 ![image](https://github.com/user-attachments/assets/6bcc610b-a5e1-4218-af4b-767d31cb17d6)
+
 ![image](https://github.com/user-attachments/assets/ca92e42d-9a26-4137-a6c0-164885e56d5d)
 
 #### Observations and Analysis
 - **Data Balancing Impact:** Oversampling proved effective in balancing the dataset, showcasing positive outcomes in classes with both the highest and lowest sample numbers ('surprise', 'happy', and 'disgust’).
 - **Effect of Training Epochs:** Raising epochs from 100 to 250 moderately boosted overall accuracy (33.38% to 45.77%), but improvements plateaued, particularly for classes like 'angry,' 'neutral,' and 'sad.'
 - **Performance in Specific Classes:** There is a tendency for the model to confuse classes such as ‘angry’, ‘fear’, and ‘neutral’, often predicting them as ‘sad’.
+
 ![image](https://github.com/user-attachments/assets/3265d525-db67-4d1f-9b50-5006941ab8cd)
 - **Limited Improvement for Certain Classes:** Extended training showed minimal performance improvement for classes 'angry,' 'neutral,' and 'sad.' This suggests complexity in discerning these classes, hinting at the need for diverse data or alternative approaches.
 - **Potential Learning Plateau:** Marginal overall accuracy improvement with a significant increase in epochs hints at a learning plateau. The model may be reaching its capacity for further improvement, encountering diminishing returns.
@@ -107,7 +110,6 @@ Therefore, we opted for a learning rate of 0.001 and extended to 400 epochs as t
 
 #### ResNet18 with Improved CNN
 Epoch [100/100], Train Loss: 1.4975, Train Accuracy: 63.47%, Test Loss: 1.5374, **Test Accuracy: 62.76%**, Test Precision: 0.6270, Test Recall: 0.6276.
-
 
 ![image](https://github.com/user-attachments/assets/8599188f-43bd-4d61-962d-7fef997a3e54)
 
@@ -120,19 +122,12 @@ Test Precision: 0.6467, Test Recall: 0.6438
 
 ![image](https://github.com/user-attachments/assets/0a7a2e70-72f5-401f-a17c-86acce733c0b)
 
-
-
-
-
 ### Comparision
 #### Comparision of different CNN models:
 ![image](https://github.com/user-attachments/assets/51ee3775-9129-44f1-93f7-049ed5800da4)
 
 #### Comparision of our models to state-of-art:
 ![image](https://github.com/user-attachments/assets/d6ac05a2-7726-4d47-89c4-505ea1518151)
-
-
-
 
 ### Conclusions
 - The FER implementation using fine-tuned CNN models addresses the challenge of imbalanced class distribution in the testing dataset.
