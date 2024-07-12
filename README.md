@@ -18,11 +18,15 @@ Under the guidance of Dr. Sujatha C, KLE Technological University, Vidyanagar, H
 ### Problem Statement and Objectives
 
 #### Problem Statement
-Develop a deployable Facial Emotion Recognition model on an ultra-low power embedded system.
+Develop a synthesizable AI model to perform image classification on facial emotions using a Convolutional Neural Network.
+
+![image](https://github.com/user-attachments/assets/f78dd619-4e62-4cef-8329-0f6edb6ccb7b)
+
 
 #### Objectives
-- Design a deep neural network-based energy-efficient Facial Emotion Recognition model.
-- Deploy the model on an ultra-low power embedded device.
+- Preprocess the images.
+- Construct and train a convolutional neural network(CNN) model to categorize facial emotions in humans.
+- Test and Compare the synthesizable model's accuracy and efficiency with state-of-the-art techniques for facial emotion recognition.
 
 ### Dataset Description
 - **Source:** Kaggle ("Facial emotion recognition" dataset)
