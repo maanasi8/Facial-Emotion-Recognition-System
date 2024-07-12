@@ -73,6 +73,57 @@ Data Preprocessing: Balancing of the train dataset using the oversampling method
   - SoftMax produces a probability distribution for emotion classes. 
 - This architecture enables accurate emotion recognition from facial expressions.
 
+#### Initial Model Implementation
+- Initial model training: 100 epochs, 33.38% accuracy, learning rate 0.0001
+  - Strong performance in 'surprise,' 'happy,' and 'disgust' during evaluation.
+
+- Extended training to 250 epochs: 45.77% accuracy
+  - Marginal improvement in 'angry,' 'neutral,' and 'sad’.
+
+- Further training at 250 epochs: 52.67% accuracy, learning rate 0.001
+  - Continued strong performance in 'surprise,' 'happy,' and 'disgust’.
+
+- Extended training to 400 epochs: 52.51% accuracy
+  - Slight improvements in 'angry,' 'neutral,' and 'sad' classes
+
+#### Class-wise Observations
+- The model demonstrates high accuracy in classifying Happy expressions, achieving 41.61% accuracy.
+- Sad, disgust and neutral expressions also show reasonable accuracy at 26.42%,33.95 %, and 24.5%, respectively.
+- Angry and Suprise expressions have lower accuracy rates, with 20.7% and 23.96%, respectively.
+- Fear exhibits an accuracy of 15.95%, indicating the lowest performance.
+Further optimization may be explored to enhance accuracy, particularly in the disgust category.
+![image](https://github.com/user-attachments/assets/6bcc610b-a5e1-4218-af4b-767d31cb17d6)
+![image](https://github.com/user-attachments/assets/ca92e42d-9a26-4137-a6c0-164885e56d5d)
+
+#### Observations and Analysis
+- **Data Balancing Impact:** Oversampling proved effective in balancing the dataset, showcasing positive outcomes in classes with both the highest and lowest sample numbers ('surprise', 'happy', and 'disgust’).
+- **Effect of Training Epochs:** Raising epochs from 100 to 250 moderately boosted overall accuracy (33.38% to 45.77%), but improvements plateaued, particularly for classes like 'angry,' 'neutral,' and 'sad.'
+- **Performance in Specific Classes:** There is a tendency for the model to confuse classes such as ‘angry’, ‘fear’, and ‘neutral’, often predicting them as ‘sad’.
+![image](https://github.com/user-attachments/assets/3265d525-db67-4d1f-9b50-5006941ab8cd)
+- **Limited Improvement for Certain Classes:** Extended training showed minimal performance improvement for classes 'angry,' 'neutral,' and 'sad.' This suggests complexity in discerning these classes, hinting at the need for diverse data or alternative approaches.
+- **Potential Learning Plateau:** Marginal overall accuracy improvement with a significant increase in epochs hints at a learning plateau. The model may be reaching its capacity for further improvement, encountering diminishing returns.
+
+Therefore, we opted for a learning rate of 0.001 and extended to 400 epochs as the graph shows the model hasn't converged. This suggests the need for additional learning.
+
+#### ResNet18 with Improved CNN
+Epoch [100/100], Train Loss: 1.4975, Train Accuracy: 63.47%, Test Loss: 1.5374, **Test Accuracy: 62.76%**, Test Precision: 0.6270, Test Recall: 0.6276.
+
+
+![image](https://github.com/user-attachments/assets/8599188f-43bd-4d61-962d-7fef997a3e54)
+
+![image](https://github.com/user-attachments/assets/ead93812-86e9-402e-abcc-aeeab954917f)
+
+#### ResNet50 with Improved CNN
+Epoch [25/25],
+Train Loss: 1.5112, Train Accuracy: 62.28%, Test Loss: 1.5265, **Test Accuracy: 64.38%**, 
+Test Precision: 0.6467, Test Recall: 0.6438
+
+![image](https://github.com/user-attachments/assets/0a7a2e70-72f5-401f-a17c-86acce733c0b)
+
+
+
+
+
 ### Comparision
 #### Comparision of different CNN models:
 ![image](https://github.com/user-attachments/assets/51ee3775-9129-44f1-93f7-049ed5800da4)
