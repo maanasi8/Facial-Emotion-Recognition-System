@@ -48,7 +48,17 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 - **Size:** 56.51MB
 - **Images:** 35,914 grayscale face images
 - **Classes:** 7 (happy, sad, disgust, angry, fear, neutral, surprise)
-- **Preprocessing:** Random oversampling to balance the training dataset, resulting in 50,505 training images.
+- **The number of images for each feature is as follows:**
+  - angry – 4953 images
+  - disgust - 547 images
+  - fear - 5121 images
+  - Happy - 8989 images
+  - neutral - 6198 images
+  - sad - 6077 images
+  - surprise - 4002 images
+- **Testing images** – 20.06% [7,205 images]
+- **Training images** – 79.93% [28,709 images]
+
 
 ### Implementation
 Data Preprocessing: Balancing of the train dataset using the oversampling method.
