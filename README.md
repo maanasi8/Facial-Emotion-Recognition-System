@@ -51,7 +51,7 @@ Develop a deployable Facial Emotion Recognition model on an ultra-low power embe
 - **Board:** MAX78000FTHR
 
 ### Deployment Flow
-1. Convert trained model to ONNX format.
+1. Convert the trained model to ONNX format.
 2. Use the MAX78000 Synthesizer tool to generate optimized C code.
 3. Deploy the model on the MAX78000FTHR board.
 
@@ -81,11 +81,3 @@ Develop a deployable Facial Emotion Recognition model on an ultra-low power embe
   - \( V = 5 \) V
   - Inference Time = 1.516 µs
   - **Inference Energy = 0.0237 mJ**
-
-## References
-1. Lei Xun et al. (2023). "Ultra-Low Power DNN Accelerators for IoT."
-2. Mitchell Clay et al. (2022). "Benchmarking the MAX78000 AI microcontroller."
-3. Kaggle. "Facial emotion recognition dataset."
-4. Julian Moosmann et al. (2023). "TinyissimoYOLO."
-5. Albert Reuther et al. (2022). "AI and ML Accelerator Survey and Trends."
-6. Mehmet Gorkem Ulkar and Osman Erman Okman (2021). "Ultra-low power keyword spotting at the edge."
