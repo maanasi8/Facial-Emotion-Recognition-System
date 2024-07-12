@@ -28,12 +28,33 @@ Develop a synthesizable AI model to perform image classification on facial emoti
 - Construct and train a convolutional neural network(CNN) model to categorize facial emotions in humans.
 - Test and Compare the synthesizable model's accuracy and efficiency with state-of-the-art techniques for facial emotion recognition.
 
+### Software Engineering Requirements
+#### Functional Requirements
+- The user shall be able to input the grayscale facial images for emotion recognition.
+- The system shall classify a range of emotions such as happiness, sadness, anger, fear, etc., from the input images.
+- The system shall predict the emotions and generate scores/accuracies for all the emotion classes.
+- The user shall be able to view the performance analysis.
+
+#### Non-Functional Requirements
+- The system should achieve a response time of less than 2 seconds for emotion recognition processing, ensuring minimal delay in emotion recognition to enhance user experience.
+- The emotion recognition system should achieve a minimum accuracy of 70% on standardized emotion recognition benchmarks.
+
+#### Use Case Diagram
+![image](https://github.com/user-attachments/assets/c3a8f9ce-cba5-4015-b90f-8acd187b190d)
+
+
 ### Dataset Description
 - **Source:** Kaggle ("Facial emotion recognition" dataset)
 - **Size:** 56.51MB
 - **Images:** 35,914 grayscale face images
 - **Classes:** 7 (happy, sad, disgust, angry, fear, neutral, surprise)
 - **Preprocessing:** Random oversampling to balance the training dataset, resulting in 50,505 training images.
+
+### Implementation
+Data Preprocessing: Balancing of the train dataset using the oversampling method.
+![image](https://github.com/user-attachments/assets/31a9799f-7cfe-4fa5-b4a3-155f7ce32e99)
+
+
 
 ### Literature Survey
 1. **Benchmarking the MAX78000 AI microcontroller** for deep learning applications.
