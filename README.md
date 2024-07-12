@@ -1,1 +1,1 @@
-# Facial-Emotion-Recognition-System-Using-Edge-AI
+# Facial Emotion Recognition System
