@@ -147,24 +147,31 @@ Extension of the model can be done to handle multi-modal inputs, such as combini
 # 1
 # 1
 
-### Literature Survey
-1. **Benchmarking the MAX78000 AI microcontroller** for deep learning applications.
-2. **TinyissimoYOLO:** A quantized object detection network for microcontrollers.
-3. **Wildlife Species Classification on the Edge:** Deep learning for low-power devices.
-4. **Ultra-low Power DNN Accelerators for IoT:** Performance of the MAX78000.
-5. **AI and ML Accelerator Survey and Trends:** Developments in AI and ML accelerators.
-6. **Ultra-Low Power Keyword Spotting at the Edge:** Optimized CNN model for the MAX78000.
+## Phase 1: Model Deployment
+
+### Problem Statement and Objectives
+
+#### Problem Statement
+Develop a deployable Facial Emotion Recognition model on an ultra-low power embedded system.
+
+![image](https://github.com/user-attachments/assets/f78dd619-4e62-4cef-8329-0f6edb6ccb7b)
+
+#### Objectives
+- Design a Deep Neural network-based energy-efficient Facial Emotion Recognition Model.
+- Deployment of the Facial Emotion Recognition Model on an ultra-low power embedded
+device.
 
 ### Approach
+![image](https://github.com/user-attachments/assets/f0052841-d422-4e0d-86f9-d2d8b73be19e)
+
 1. **Model Development:** Designed with PyTorch.
 2. **Training:** Trained with floating-point weights, then quantized for deployment.
 3. **Model Evaluation:** Assessed using an evaluation dataset.
 4. **Synthesis Process:** Used the MAX78000 Synthesizer tool to generate optimized C code from ONNX files and YAML model description.
 
-## Phase 2: Deployment
-
 ### Deployment Board
-- **Board:** MAX78000FTHR
+**Board:** MAX78000FTHR BOARD
+  
 
 ### Deployment Flow
 1. Convert the trained model to ONNX format.
